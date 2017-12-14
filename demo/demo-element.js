@@ -1,6 +1,6 @@
 import {Element as PolymerElement} from "../../node_modules/@polymer/polymer/polymer-element.js"
 import "../../node_modules/@polymer/iron-icons/iron-icons.js"
-import "../icon-toggle.js"
+import "../progress-button.js"
 
 //export const html = Polymer.html;
 
@@ -23,24 +23,24 @@ class DemoElement extends PolymerElement {
       <style>
         :host {
           font-family: sans-serif;
-          --icon-toggle-color: lightgrey;
-          --icon-toggle-outline-color: black;
-          --icon-toggle-pressed-color: red;
+          --progress-button-color: lightgrey;
+          --progress-button-outline-color: black;
+          --progress-button-pressed-color: red;
         }
       </style>
   
-      <h3>Statically-configured icon-toggles</h3>
+      <h3>Statically-configured progress-buttons</h3>
     
-      <icon-toggle toggle-icon="star"></icon-toggle>
-      <icon-toggle toggle-icon="star" pressed></icon-toggle>
+      <progress-button toggle-icon="star"></progress-button>
+      <progress-button toggle-icon="star" pressed></progress-button>
     
-      <h3>Data-bound icon-toggle</h3>
+      <h3>Data-bound progress-button</h3>
 
       <!-- use a computed binding to generate the message -->
       <div><span>[[_message(isFav)]]</span></div>
 
       <!-- curly brackets ({{}}} allow two-way binding --> 
-      <icon-toggle toggle-icon="favorite" pressed="{{isFav}}"></icon-toggle>
+      <progress-button toggle-icon="favorite" pressed="{{isFav}}"></progress-button>
     `
   }
 }
