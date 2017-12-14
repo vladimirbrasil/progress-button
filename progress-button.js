@@ -6,7 +6,7 @@ import "../node_modules/@polymer/iron-icon/iron-icon.js"
 export const html = (strings, ...values) => strings[0]
 + values.map((v, i) => v + strings[i+1]).join('');
 
-class IconToggle extends PolymerElement {
+class ProgressButton extends PolymerElement {
   
   static get properties () {
     return {
@@ -54,4 +54,4 @@ class IconToggle extends PolymerElement {
   }
 }
 
-customElements.define('icon-toggle', IconToggle);
+customElements.define('progress-button', ProgressButton);
